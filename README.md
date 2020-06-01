@@ -1,2 +1,2 @@
 # simpleflaskchartgui
-Line Chart using Flask and Chart.js 
+Web GUI for Line Chart using Flask and Chart.js 
