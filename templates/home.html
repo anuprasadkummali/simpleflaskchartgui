@@ -2,14 +2,16 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>Simple Flask Website</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Sensor App</title>
+      <link rel="icon" href="{{ url_for('static', filename='media/icon.png') }}" type="image/png"/>
    </head>
    <body>
       {% extends "template.html" %}
       {% block content %}
-      <h1> Building a Simple Flask Website </h1>
-      <p> Flask is a Fun and easy framework</p>
-      <p> Flask and HTML in python looks cool</p>
+      <h1> Sensor data plotting </h1>
+      <p> Go to Charts Menu for Sensor Data</p>
+      <p> Go to AboutUs for contacts</p>
       {% endblock %}
    </body>
 </html>

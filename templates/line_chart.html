@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Chart.js Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Sensor App</title>
+      <link rel="icon" href="{{ url_for('static', filename='media/icon.png') }}" type="image/png"/>
     <!-- import plugin script -->
     <!-- <script src='static/Chart.min.js'></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" type="text/javascript"></script>
@@ -12,7 +14,7 @@
     {% block content %}
     <h1>Temperature Sensor #1</h1>
     <!-- bar chart canvas element -->
-    <div></div><canvas id="myChart" width="600" height="400"></canvas></body></div>
+    <div><canvas id="myChart" width="400" height="300"></canvas><</div>
     <p id="pointSelected">Point selected:</p>
 
 

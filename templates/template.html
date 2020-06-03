@@ -2,19 +2,32 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Flask Parent Template</title>
+      <link rel="icon" href="{{ url_for('static', filename='media/icon.png') }}" type="image/png"/>
       <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+      <style>
+       body {
+         background-image: url("static/media/DEBELpage.jpg");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center;
+            }
+        h1 {
+        text-align: left;
+            }
+      </style>
    </head>
    <body>
       <header>
          <div class="container">
-            <h1 class="logo">Simple Flask Website</h1>
+            <h1 class="logo" style="text-align:left">Defence Bioengineering and Electromedical Laboratory</h1>
             <strong>
                <nav>
                   <ul class="menu">
                      <li><a href="{{ url_for('home') }}">Home</a></li>
                      <li><a href="{{ url_for('line_chart') }}">Charts</a></li>
-                     <li><a href="{{ url_for('about') }}">About</a></li>
+                     <li><a href="{{ url_for('about') }}">About Us</a></li>
                   </ul>
                </nav>
             </strong>
